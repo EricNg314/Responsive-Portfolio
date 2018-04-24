@@ -28,13 +28,22 @@ a.highlight:hover{
 
  .headerName {
     float:left;
-    padding:16px;
+    padding:22px;
+    padding-top:16px;
+    padding-bottom:16px;
     font-size: 20pt;
     background-color:#4aaaa5;
     color: #ffffff;
     white-space: nowrap;
     font-weight:bold;
     font-family: "Georgia", Times, "Times New Roman", serif;
+   
+}
+
+.linkContainer{
+    display:flex;
+    flex-direction: row;
+    float:right;
 }
 
 .headerLinks{
@@ -42,11 +51,13 @@ a.highlight:hover{
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     float:right;
-    margin-left:10px;
-    margin-right:10px;
     padding:10px;
     padding-top:16px;
     padding-bottom:16px;
+}
+
+.headerLinkBorder{
+    border-left:1px solid #4aaaa5;
 }
 
 .mainBox {
@@ -61,7 +72,9 @@ a.highlight:hover{
 
 .mainHeader{
     margin:0;
-    padding:20px;
+    padding:10px;
+    padding-top:20px;
+    padding-bottom:20px;
     color: #777777;
     font-size: 20pt;
     font-weight: bold;
@@ -72,7 +85,7 @@ a.highlight:hover{
 
 .articleContent{
     display:block;
-    padding: 20px;
+    padding: 12px;
 }
 
 
@@ -82,7 +95,7 @@ a.highlight:hover{
     border-top: 5px solid #4aaaa5;
     position: fixed;
     width: 100%;
-    padding-top:32px;
+    padding-top:20px;
     bottom: 0;
   
 }
@@ -152,4 +165,51 @@ a.highlight:hover{
     padding-right:20px;
     padding-top:5px;
     padding-bottom:5px;
+}
+
+
+@media only screen and (max-width: 640px) {
+    #nameContainer{
+        width:100%;
+        text-align:center;
+        margin-left:0;
+        margin-right:0;
+        justify-content: center;
+        padding-left:0;
+        padding-right:0;
+    }
+
+    .linkContainer{
+        position: relative;
+        width:100%;
+     
+        justify-content:center;
+    }
+
+    .mainBox{
+        margin-top:120px;
+    }
+    .nameBg {
+      width:100%;
+      text-align:center;
+    }
+
+    .navbar{
+        margin:0 auto;
+    }
+
+    #mediaQueryMargins {
+        width:100%;
+        margin-left:0;
+        margin-right:0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    /* For desktop: */
+
+}
+
+@media only screen and (max-width: 980px) {
+    /* For desktop: */
+
 }
